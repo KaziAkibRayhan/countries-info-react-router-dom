@@ -1,10 +1,11 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header/Header";
+import { router } from "./layout/routes";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
